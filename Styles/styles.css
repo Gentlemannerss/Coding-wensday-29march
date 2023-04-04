@@ -1,0 +1,86 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Specific
+    4. Areas
+        4.1 Header
+            4.1.1 Navigation Bar
+            4.1.2 Hero Section
+        4.2 Main
+            4.2.1 Introduction
+            4.2.2 Projects
+            4.2.3 Services
+            4.2.4 Form
+        4.3 Footer
+            4.3.1 Footer Bar
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    /*border: 1px solid red;*/
+}
+
+:root {
+    /*Colors summary*/
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    /*Gradients*/
+    --Background-gradient: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    --Circle-gradient: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    /*Colors site*/
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+/* Layout
+Mobiel: 375px
+Desktop: 1440px
+*/
+/* ------------------------------- 2. Typography ----------------------------------- */
+/* ------------------------------- 3. Layout --------------------------------------- */
+/* ---------------------- 3.1 Reusables ----------------------- */
+
+.outerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.innerContainer {
+    flex-basis: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+/* ---------------------- 3.2 Specific ------------------------ */
+/* ------------------------------- 4. Areas ---------------------------------------- */
+.summary > div {
+    display: flex;
+    gap: 1rem;
+}
+/* ------------------------------- 5. Media Queries -------------------------------- */
+@media screen and (min-width: 1440px) {
+    .innerContainer {
+        flex-direction: row;
+    }
+}
