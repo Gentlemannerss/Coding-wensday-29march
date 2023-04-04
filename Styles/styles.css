@@ -32,10 +32,10 @@
 
 :root {
     /*Colors summary*/
-    --Light-red: hsl(0, 100%, 67%);
-    --Orangey-yellow: hsl(39, 100%, 56%);
-    --Green-teal: hsl(166, 100%, 37%);
-    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Light-red: hsl(0, 100%, 67%, 0.2);
+    --Orangey-yellow: hsl(39, 100%, 56%, 0.2);
+    --Green-teal: hsl(166, 100%, 37%, 0.2);
+    --Cobalt-blue: hsl(234, 85%, 45%, 0.2);
     /*Gradients*/
     --Background-gradient: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
     --Circle-gradient: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
@@ -77,6 +77,40 @@ Desktop: 1440px
 .summary > div {
     display: flex;
     gap: 1rem;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.reaction {
+    background-color: var(--Light-red);
+}
+
+.memory {
+    background-color: var(--Orangey-yellow);
+}
+
+.verbal {
+    background-color: var(--Green-teal);
+}
+
+.visual {
+    background-color: var(--Cobalt-blue);
+}
+
+button {
+    background-color: var(--Dark-gray-blue);
+    color: white;
+    width: 100%;
+    border-radius: 25px;
+    padding: 0.5rem;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--Pale-blue);
+    color: var(--Dark-gray-blue);
 }
 /* ------------------------------- 5. Media Queries -------------------------------- */
 @media screen and (min-width: 1440px) {
